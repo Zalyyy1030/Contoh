@@ -1,7 +1,7 @@
 nama = str(input("Masukkan nama: "))
 
 while nama!="python":
-    nama = str (input("Masukkan nama:"))
     print("Nama saya:",nama)
+    nama = str (input("Masukkan nama:"))
     
 print("Goodbye python")
