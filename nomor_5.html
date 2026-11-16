@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h2>Contoh "Switch Case"</h2>
+
+    <script>
+        let hari = prompt("Sekarang Hari apa?");
+        hari = hari.toLowerCase();
+
+        switch (hari) {
+            case "senin":
+                urutan = 1;
+                break;
+            case "selasa":
+                urutan = 2;
+                break;
+            case "rabu":
+                urutan = 3;
+                break;
+            case "kamis":
+                urutan = 4;
+                break;
+            case "jumat":
+                urutan = 5;
+                break;
+            case "sabtu":
+                urutan = 6;
+                break;
+            case "ahad":
+                urutan = 7;
+                break;
+            default:
+                urutan = 0;
+        }
+
+        hari = hari.toUpperCase();
+        document.write("<p>" + hari + "adalah hari ke-" + urutan + "</p>");
+    </script>
+</body>
+</html>

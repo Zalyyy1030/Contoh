@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h2>Contoh Nested If</h2>
+
+    <script>
+        let umur = prompt("Berapa umur Anda?" , 0);
+        umur = parseInt(umur);
+        let punyaSIM = prompt("Apakah anda punya SIM? (Ya/Tidak)");
+        punyaSIM = punyaSIM.toLowerCase();
+
+
+        if (umur >=17) {
+            if (punyaSIM == "Ya") {
+                document.write("<p>Umur " + umur + "tahun dan punya SIM: Boleh Mengemudi</p>");
+
+            } else {
+                document.write("<p>Umur" + umur + "tahun tapi belum punya SIM: Tidak Boleh mengemudi</p>");
+
+            }
+        } else {
+            document.write("<p>Umur" + umur + "tahun: Masih di bawah umur untuk mengemudi</p>");
+        }
+    </script>
+</body>
+</html>

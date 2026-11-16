@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index</title>
+</head>
+<body>
+    <h1>Menghitung BMI</h1>
+
+    <script>
+        let berat = prompt("Berapa berat anda?");
+        let tinggi = prompt("Berapa tinggi anda?");
+
+        berat = parseFloat(berat);
+        tinggi = parseFloat(tinggi);
+
+        let hasil = berat / tinggi;
+
+        hasil =parseInt(hasil);
+        
+
+        document.write("<p>Berat anda:" + berat +"kg</p>");
+        document.write("<p>Tinggi anda:" + tinggi + "m</p>");
+        document.write("<p>Maka berat ideal anda:" + hasil + "kg</p>")
+    </script>
+</body>
+</html>
